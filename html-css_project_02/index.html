@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video src="videoplayback.mp4" muted loop autoplay></video>
+   <div class="outer-box">
+      <div class="inner-box">
+        <header class="login-header">
+          <h1>Login</h1>
+          <p>Login to your Exisiting Account.</p>
+        </header>
+        <main class="login-main">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="95672751-b512-43fc-af45-f02c42909d90">
+            <p>
+              <label for="username">Username </label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+              />
+            </p>
+
+            <p class="p-center">Or</p>
+
+            <p>
+              <label for="email">Email </label>
+              <input type="email" id="email" placeholder="Enter your email" />
+            </p>
+
+            <p>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </p>
+
+            <p class="p-right"><a href="#">Forget password? </a></p>
+
+            <p>
+              <input type="submit" id="submit" value="Login" />
+            </p>
+          </form>
+        </main>
+        <footer class="login-footer">
+          <p>Don't have an Account <a href="#">signup</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
